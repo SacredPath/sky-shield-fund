@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Ukraine’s Sky Shield Fund</title>
+<style>
+  body { margin:0; font-family:'Segoe UI',sans-serif; background:#eef2f5; }
+  .wrapper { max-width:720px; margin:auto; padding:2rem 1rem; }
+  .card { background:#fff; padding:2rem; border-radius:12px; box-shadow:0 10px 30px rgba(0,0,0,0.05); margin-bottom:2rem; }
+  h1 { color:#2d3436; font-size:2.2rem; }
+  .subtitle { color:#555; font-size:1.1rem; margin-bottom:1.5rem; }
+  .story, .needs { font-size:1rem; color:#333; line-height:1.6; margin-bottom:1.8rem; }
+  .stats { display:grid; grid-template-columns:1fr; gap:1rem; margin-bottom:1.8rem; }
+  .stat { background:#dfe6e9; padding:1rem; border-radius:8px; font-size:0.95rem; }
+  .stat a { color:#0984e3; text-decoration:none; }
+  .tiers { display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.8rem; }
+  .tier { background:#f1f2f6; padding:1rem; border-radius:8px; text-align:center; }
+  .tier h4 { margin:0 0 .5rem; }
+  .wallets h3 { font-size:1.2rem; color:#2d3436; margin-bottom:1rem; }
+  .wallet { margin-bottom:1rem; }
+  .wallet button { background:#0984e3; color:#fff; border:none; padding:.6rem 1rem; border-radius:5px; cursor:pointer; }
+  .address { margin-top:.5rem; font-family:monospace; background:#f0f0f0; padding:.6rem; border-radius:5px; word-break:break-all; display:none; }
+  .footer { text-align:center; color:#888; font-size:.9rem; margin-top:1rem; }
+</style>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="card">
+    <h1>Ukraine’s Sky Shield Fund</h1>
+    <div class="subtitle">Logistics heroes behind the air defense networks saving lives and cities.</div>
+
+    <div class="story">
+      Russian drone and missile raids have increased sharply. While governments send major systems like Patriots and SAMP/T, grassroots logistic support is vital. <br>
+      We fund: FPV interceptor drones, mobile radar trailers, acoustic sensors, AI turret systems, and volunteer bonuses.
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        ✔️ Civilians can earn up to $2,400/month shooting down drones → <a href="#" onclick="return false;">Business Insider</a>
+      </div>
+      <div class="stat">
+        ✔️ Ukraine’s mobile air-defense teams intercept ~40% of Shaheds → <a href="#" onclick="return false;">Militarnyi</a>
+      </div>
+      <div class="stat">
+        ✔️ Russia launched 3,681 Shaheds in June alone — 6× last year’s rate → <a href="#" onclick="return false;">DW</a>
+      </div>
+      <div class="stat">
+        ✔️ Dutch MoD supplying 51 mobile drone radars with 360° OTM detection → <a href="#" onclick="return false;">DroneLife</a>
+      </div>
+      <div class="stat">
+        ✔️ Ukraine recorded ~2,500 drone interceptions from Nov ’24–Mar ’25 → <a href="#" onclick="return false;">Espreso TV</a>
+      </div>
+    </div>
+
+    <div class="needs">
+      <strong>How your donations help:</strong>
+      <ul>
+        <li><strong>$10</strong> → warm meals & ammo for FPV drone teams</li>
+        <li><strong>$50</strong> → fuel for mobile radar vans</li>
+        <li><strong>$200</strong> → AI turret maintenance per month</li>
+        <li><strong>$1,000+</strong> → full interceptor drone or acoustic sensor kits</li>
+      </ul>
+    </div>
+
+    <div class="tiers">
+      <div class="tier">
+        <h4>Support Meal Ops</h4>
+        <$10<br><em>Warm fuel & food</em>
+      </div>
+      <div class="tier">
+        <h4>Fund Radar Runs</h4>
+        $50<br><em>Mobile radar fuel</em>
+      </div>
+      <div class="tier">
+        <h4>AI Turret Upkeep</h4>
+        $200/mo<br><em>Monthly maintenance</em>
+      </div>
+      <div class="tier">
+        <h4>Drone Kit</h4>
+        $1 000+<br><em>Interceptor drone system</em>
+      </div>
+    </div>
+
+    <div class="wallets">
+      <h3>Donate Crypto</h3>
+
+      <div class="wallet"><button onclick="toggleAddr('doge')">Dogecoin</button>
+        <div id="doge" class="address">D91ME9KqahFu7LLySpr3nPGYY1iheCu8WX</div>
+      </div>
+      <div class="wallet"><button onclick="toggleAddr('btc')">Bitcoin</button>
+        <div id="btc" class="address">bc1qxvjz6kv84awx29p75qhn7qgxtwq4xt3phc7q26</div>
+      </div>
+      <div class="wallet"><button onclick="toggleAddr('sol')">Solana</button>
+        <div id="sol" class="address">3F2D7izX8gYkSwXwSyWoKB1dob53MDMCxqBVpPUEc8sz</div>
+      </div>
+      <div class="wallet"><button onclick="toggleAddr('usdt')">USDT (ERC20)</button>
+        <div id="usdt" class="address">0x1a670b57855dE6cED8Cf659Eea8BDDcB0F4C5FE4</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      🛡️ 100% of funds go directly to volunteer logistics. All expenses are tracked and shared on our Telegram updates.
+    </div>
+  </div>
+</div>
+
+<script>
+  function toggleAddr(id) {
+    const el = document.getElementById(id);
+    el.style.display = el.style.display === 'block' ? 'none' : 'block';
+  }
+</script>
+
+</body>
+</html>
