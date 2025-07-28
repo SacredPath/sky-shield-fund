@@ -473,19 +473,23 @@
     
     /* Donation Section */
     .donation-options {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
       margin-top: 3rem;
+      justify-content: center;
     }
     
     .crypto-option {
       background: var(--bg-light);
-      border-radius: 16px;
-      padding: 2rem;
+      border-radius: 12px;
+      padding: 1.5rem;
       text-align: center;
       border: 2px solid var(--border);
       transition: all 0.3s ease;
+      min-width: 200px;
+      flex: 1;
+      max-width: 250px;
     }
     
     .crypto-option:hover {
@@ -494,14 +498,14 @@
     }
     
     .crypto-icon {
-      font-size: 2.5rem;
-      margin-bottom: 1rem;
+      font-size: 2rem;
+      margin-bottom: 0.8rem;
     }
     
     .crypto-name {
-      font-size: 1.3rem;
+      font-size: 1.1rem;
       font-weight: 600;
-      margin-bottom: 1rem;
+      margin-bottom: 0.8rem;
       color: var(--text-dark);
     }
     
@@ -547,12 +551,13 @@
       background: var(--primary);
       color: white;
       border: none;
-      padding: 1rem 2rem;
-      border-radius: 12px;
+      padding: 0.8rem 1.5rem;
+      border-radius: 8px;
       cursor: pointer;
       font-weight: 600;
       transition: all 0.3s ease;
       width: 100%;
+      font-size: 0.9rem;
     }
     
     .show-address-btn:hover {
