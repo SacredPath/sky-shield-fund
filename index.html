@@ -375,7 +375,7 @@
     }
     
     .progress-bar {
-      width: 65%;
+      width: 58%;
       background: linear-gradient(90deg, #fff, rgba(255,255,255,0.8));
       height: 30px;
       border-radius: 50px;
@@ -914,12 +914,12 @@
         
         <div class="donation-counter">
           <div class="counter-label">Total Funds Raised</div>
-          <div class="counter-number" id="totalRaised">$65,247</div>
+          <div class="counter-number" id="totalRaised">$57,600</div>
           <div class="counter-label">Goal: $100,000</div>
           <div class="progress">
             <div class="progress-bar" id="progressBar"></div>
           </div>
-          <p style="margin-top: 1rem; opacity: 0.9;">65% of our goal achieved - Thank you for your support</p>
+          <p style="margin-top: 1rem; opacity: 0.9;">58% of our goal achieved - Thank you for your support</p>
         </div>
       </div>
 
@@ -1166,11 +1166,11 @@
       const totalRaised = document.getElementById('totalRaised');
       
       setTimeout(() => {
-        progressBar.style.width = '65%';
+        progressBar.style.width = '58%';
       }, 500);
       
       // Animate counter
-      animateCounter(totalRaised, 0, 65247, 2000);
+      animateCounter(totalRaised, 0, 57600, 2000);
       
       // Contact form handling
       const contactForm = document.getElementById('contactForm');
