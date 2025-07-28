@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Sky Shield Fund - Protecting Ukraine's Skies</title>
-  <meta name="description" content="Join the Sky Shield Fund in defending Ukraine against drone attacks. Support volunteer pilots, radar crews, and drone hunters protecting our homes and infrastructure.">
-  <meta property="og:title" content="Sky Shield Fund - Protecting Ukraine's Skies">
+  <title>Ukraine Shield - Protecting Ukraine's Skies</title>
+  <meta name="description" content="Join Ukraine Shield in defending Ukraine against drone attacks. Support volunteer pilots, radar crews, and drone hunters protecting our homes and infrastructure.">
+  <meta property="og:title" content="Ukraine Shield - Protecting Ukraine's Skies">
   <meta property="og:description" content="Support Ukraine's defense against drone attacks. Every donation helps protect our homes and infrastructure.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://snake-vac.vercel.app">
@@ -114,6 +114,7 @@
       color: white;
       position: relative;
       overflow: hidden;
+      padding-top: 80px; /* Add padding to account for fixed header */
     }
     
     .hero::before {
@@ -125,13 +126,14 @@
       bottom: 0;
       background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
       opacity: 0.3;
+      z-index: 1;
     }
     
     .hero-content {
       max-width: 800px;
       padding: 0 2rem;
       position: relative;
-      z-index: 2;
+      z-index: 10; /* Ensure content is above the background pattern */
     }
     
     .hero h1 {
@@ -139,6 +141,7 @@
       font-weight: 800;
       margin-bottom: 1.5rem;
       line-height: 1.2;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
     }
     
     .hero-subtitle {
@@ -146,6 +149,7 @@
       margin-bottom: 2rem;
       opacity: 0.95;
       font-weight: 400;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
     
     .hero-description {
@@ -155,6 +159,7 @@
       max-width: 600px;
       margin-left: auto;
       margin-right: auto;
+      text-shadow: 0 1px 2px rgba(0,0,0,0.3);
     }
     
     .cta-buttons {
@@ -162,6 +167,8 @@
       gap: 1rem;
       justify-content: center;
       flex-wrap: wrap;
+      position: relative;
+      z-index: 10;
     }
     
     .btn {
@@ -779,7 +786,7 @@
     <nav class="nav-container">
       <a href="#" class="logo">
         <span class="logo-icon">🛡️</span>
-        <span>Sky Shield Fund</span>
+        <span>Ukraine Shield</span>
       </a>
       <ul class="nav-links">
         <li><a href="#mission">Mission</a></li>
@@ -793,10 +800,10 @@
   <!-- Hero Section -->
   <section class="hero">
     <div class="hero-content">
-      <h1>Defending Ukraine's Skies</h1>
-      <p class="hero-subtitle">Join the frontline defense against drone attacks</p>
+      <h1>Ukraine Shield</h1>
+      <p class="hero-subtitle">Defending Ukraine's Skies Against Drone Attacks</p>
       <p class="hero-description">
-        The Sky Shield Fund supports volunteer pilots, radar crews, and drone hunters who work tirelessly to protect Ukrainian homes, infrastructure, and lives from aerial threats. Every donation directly funds critical defense equipment and operations.
+        Join Ukraine Shield in supporting volunteer pilots, radar crews, and drone hunters who work tirelessly to protect Ukrainian homes, infrastructure, and lives from aerial threats. Every donation directly funds critical defense equipment and operations.
       </p>
       <div class="cta-buttons">
         <a href="#donate" class="btn btn-primary">🚀 Donate Now</a>
@@ -860,7 +867,7 @@
               Russia's drone warfare has escalated dramatically, with over 3,600 Shahed drones launched in June 2024 alone. These attacks target civilian infrastructure, homes, and critical facilities across Ukraine.
             </p>
             <p>
-              The Sky Shield Fund provides essential support to volunteer defense units, including radar equipment, thermal imaging systems, fuel for mobile units, and training for drone interception teams.
+              Ukraine Shield provides essential support to volunteer defense units, including radar equipment, thermal imaging systems, fuel for mobile units, and training for drone interception teams.
             </p>
             <p>
               Our network of volunteers operates 24/7, intercepting threats and protecting communities. Your donations directly fund these critical operations and help save lives.
@@ -971,8 +978,8 @@
         <div class="contact-grid">
           <div class="contact-info">
             <h4>Contact Information</h4>
-            <p><strong>Email:</strong> info@skyshieldfund.org</p>
-            <p><strong>Telegram:</strong> @SkyShieldFund</p>
+            <p><strong>Email:</strong> info@ukraineshield.org</p>
+            <p><strong>Telegram:</strong> @UkraineShield</p>
             <p><strong>Response Time:</strong> Within 24 hours</p>
             
             <h4 style="margin-top: 2rem;">Volunteer Opportunities</h4>
@@ -1042,7 +1049,7 @@
     <div class="container">
       <div class="footer-content">
         <div class="footer-section">
-          <h4>Sky Shield Fund</h4>
+          <h4>Ukraine Shield</h4>
           <p>Protecting Ukrainian skies through technology, training, and support. Every donation directly funds critical defense operations.</p>
         </div>
         
@@ -1063,8 +1070,8 @@
         
         <div class="footer-section">
           <h4>Contact</h4>
-          <p>Email: info@skyshieldfund.org</p>
-          <p>Telegram: @SkyShieldFund</p>
+          <p>Email: info@ukraineshield.org</p>
+          <p>Telegram: @UkraineShield</p>
           <p>Response time: 24 hours</p>
         </div>
       </div>
@@ -1077,7 +1084,7 @@
       </div>
       
       <div class="footer-bottom">
-        <p>&copy; 2024 Sky Shield Fund. All rights reserved. | Protecting Ukraine's skies, one donation at a time.</p>
+        <p>&copy; 2024 Ukraine Shield. All rights reserved. | Protecting Ukraine's skies, one donation at a time.</p>
       </div>
     </div>
   </footer>
@@ -1199,7 +1206,7 @@
     }
     
     function shareOnTwitter() {
-      const text = 'Support Ukraine\'s Sky Shield Fund! Join volunteer pilots, radar crews & drone hunters in protecting our homes. Every donation helps!';
+      const text = 'Support Ukraine Shield! Join volunteer pilots, radar crews & drone hunters in protecting our homes. Every donation helps!';
       const url = window.location.href;
       window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(url)}`, '_blank');
     }
@@ -1210,7 +1217,7 @@
     }
     
     function shareOnTelegram() {
-      const text = 'Support Ukraine\'s Sky Shield Fund! Join volunteer pilots, radar crews & drone hunters in protecting our homes. Every donation helps!';
+      const text = 'Support Ukraine Shield! Join volunteer pilots, radar crews & drone hunters in protecting our homes. Every donation helps!';
       const url = window.location.href;
       window.open(`https://t.me/share/url?url=${encodeURIComponent(url)}&text=${encodeURIComponent(text)}`, '_blank');
     }
